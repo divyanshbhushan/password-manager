@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Expense App</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/custom-style.css">
+</head>
+<body>
+    <div id="form_container" class="w-full h-screen flex items-center justify-center bg-zinc-50">
+        <form action="/signup" method="post" class="">
+            <div class="bg-zinc-100 px-7 py-10 min-h-[500px] min-w-96 gap-4 flex flex-col items-center border border-zinc-300 rounded-xl justify-between" id="parentContainer">
+                <h3 class="flex flex-col items-center justify-center gap-3 font-bold text-2xl text-purple-700">
+                    <img src="/svgs/logo-transparent.svg" alt="" class="" width="100px">
+                    Signup to continue
+                </h3>
+                <div class="flex flex-col w-full gap-3 items-center relative">
+                    <div class="relative w-full flex flex-col items-center justify-center min-h-8 border-2 px-4 py-2 rounded-3xl">
+                        <input required type="text" name="username" id="username" placeholder="Enter your username" class="w-full px-0 py-0 bg-transparent outline-none border-none">
+                    </div>
+                    <div class="relative w-full flex flex-col items-center justify-center min-h-8 border-2 px-4 py-2 rounded-3xl">
+                        <input required type="text" name="fullName" id="fullName" placeholder="Enter your name" class="w-full px-0 py-0 bg-transparent outline-none border-none">
+                    </div>
+                    <div class="relative w-full flex flex-col items-center justify-center min-h-8 border-2 px-4 py-2 rounded-3xl">
+                        <input required type="text" name="email" id="email" placeholder="Enter your email" class="w-full px-0 py-0 bg-transparent outline-none border-none">
+                    </div>
+                    <div class="relative w-full flex flex-col items-center justify-center min-h-8 border-2 px-4 py-2 rounded-3xl">
+                        <input required type="text" name="password" id="password" placeholder="Enter your password" class="w-full px-0 py-0 bg-transparent outline-none border-none">
+                    </div>
+                    <a href="/login" class="ms-auto text-xs font-medium text-zinc-600 underline hover:text-zinc-700">Already have an account? Login</a>
+                    <button type="submit" class="bg-purple-500 text-zinc-50 px-10 py-2 rounded-lg hover:bg-purple-600 transition-all duration-300 font-semibold mt-3">Login</button>
+                </div>
+                   <fieldset class="text-center border-t-2 w-full border-zinc-300">
+                    <legend class="px-2 text-zinc-500">or</legend>
+                   </fieldset>
+                <div class="w-full px-5">
+                    <a href="/auth/google" class="flex border-2 px-3 py-2 rounded-3xl items-center gap-4 border-zinc-200 hover:bg-zinc-200">
+                        <img src="/svgs/google.svg" class="w-7" alt="Google" width="28px">
+                        Signup with Google
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+</body>
+</html>
